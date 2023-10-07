@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="finaldatabaseDataSet17" targetNamespace="http://tempuri.org/finaldatabaseDataSet17.xsd" xmlns:mstns="http://tempuri.org/finaldatabaseDataSet17.xsd" xmlns="http://tempuri.org/finaldatabaseDataSet17.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="finaldatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="finaldatabaseConnectionString (Settings)" PropertyReference="ApplicationSettings.FINALVERSIONIHOPE.Properties.Settings.GlobalReference.Default.finaldatabaseConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ПО-20 ВБTableAdapter" GeneratorDataComponentClassName="ПО_20_ВБTableAdapter" Name="ПО-20 ВБ" UserDataComponentName="ПО-20 ВБTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finaldatabaseConnectionString (Settings)" DbObjectName="ПО-20 ВБ" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер П/П], ФИО, Группа, [Военный билет] FROM [ПО-20 ВБ]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер П/П" DataSetColumn="Номер П/П" />
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Группа" DataSetColumn="Группа" />
+              <Mapping SourceColumn="Военный билет" DataSetColumn="Военный билет" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="finaldatabaseDataSet17" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="finaldatabaseDataSet17" msprop:Generator_UserDSName="finaldatabaseDataSet17">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ПО-20_x0020_ВБ" msprop:Generator_TableClassName="_ПО_20_ВБDataTable" msprop:Generator_TableVarName="_tableПО_20_ВБ" msprop:Generator_TablePropName="_ПО_20_ВБ" msprop:Generator_RowDeletingName="_ПО_20_ВБRowDeleting" msprop:Generator_RowChangingName="_ПО_20_ВБRowChanging" msprop:Generator_RowEvHandlerName="_ПО_20_ВБRowChangeEventHandler" msprop:Generator_RowDeletedName="_ПО_20_ВБRowDeleted" msprop:Generator_UserTableName="ПО-20 ВБ" msprop:Generator_RowChangedName="_ПО_20_ВБRowChanged" msprop:Generator_RowEvArgName="_ПО_20_ВБRowChangeEvent" msprop:Generator_RowClassName="_ПО_20_ВБRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_П_x002F_П" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="_columnНомер_П_П" msprop:Generator_ColumnPropNameInRow="_Номер_П_П" msprop:Generator_ColumnPropNameInTable="_Номер_П_ПColumn" msprop:Generator_UserColumnName="Номер П/П" type="xs:int" />
+              <xs:element name="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Группа" msprop:Generator_ColumnVarNameInTable="columnГруппа" msprop:Generator_ColumnPropNameInRow="Группа" msprop:Generator_ColumnPropNameInTable="ГруппаColumn" msprop:Generator_UserColumnName="Группа" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Военный_x0020_билет" msprop:Generator_ColumnVarNameInTable="columnВоенный_билет" msprop:Generator_ColumnPropNameInRow="Военный_билет" msprop:Generator_ColumnPropNameInTable="Военный_билетColumn" msprop:Generator_UserColumnName="Военный билет" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ПО-20_x0020_ВБ" />
+      <xs:field xpath="mstns:Номер_x0020_П_x002F_П" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

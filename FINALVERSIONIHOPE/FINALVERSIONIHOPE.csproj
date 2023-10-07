@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3FAC7DB-0B5F-4680-AE50-D12496897FA9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FINALVERSIONIHOPE</RootNamespace>
+    <AssemblyName>FINALVERSIONIHOPE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB.cs" />
+    <Compile Include="EMAILcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMAILcs.Designer.cs">
+      <DependentUpon>EMAILcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finaldatabaseDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finaldatabaseDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EMAILcs.resx">
+      <DependentUpon>EMAILcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="finaldatabaseDataSet.xsc">
+      <DependentUpon>finaldatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet.xss">
+      <DependentUpon>finaldatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet1.xsc">
+      <DependentUpon>finaldatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet1.xss">
+      <DependentUpon>finaldatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet10.xsc">
+      <DependentUpon>finaldatabaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet10.xss">
+      <DependentUpon>finaldatabaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet11.xsc">
+      <DependentUpon>finaldatabaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet11.xss">
+      <DependentUpon>finaldatabaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet12.xsc">
+      <DependentUpon>finaldatabaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet12.xss">
+      <DependentUpon>finaldatabaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet13.xsc">
+      <DependentUpon>finaldatabaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet13.xss">
+      <DependentUpon>finaldatabaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet14.xsc">
+      <DependentUpon>finaldatabaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet14.xss">
+      <DependentUpon>finaldatabaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet15.xsc">
+      <DependentUpon>finaldatabaseDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet15.xss">
+      <DependentUpon>finaldatabaseDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet16.xsc">
+      <DependentUpon>finaldatabaseDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet16.xss">
+      <DependentUpon>finaldatabaseDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet17.xsc">
+      <DependentUpon>finaldatabaseDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet17.xss">
+      <DependentUpon>finaldatabaseDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet18.xsc">
+      <DependentUpon>finaldatabaseDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet18.xss">
+      <DependentUpon>finaldatabaseDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet19.xsc">
+      <DependentUpon>finaldatabaseDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet19.xss">
+      <DependentUpon>finaldatabaseDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet2.xsc">
+      <DependentUpon>finaldatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet2.xss">
+      <DependentUpon>finaldatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet20.xsc">
+      <DependentUpon>finaldatabaseDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet20.xss">
+      <DependentUpon>finaldatabaseDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet21.xsc">
+      <DependentUpon>finaldatabaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet21.xss">
+      <DependentUpon>finaldatabaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet22.xsc">
+      <DependentUpon>finaldatabaseDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet22.xss">
+      <DependentUpon>finaldatabaseDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet23.xsc">
+      <DependentUpon>finaldatabaseDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet23.xss">
+      <DependentUpon>finaldatabaseDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet24.xsc">
+      <DependentUpon>finaldatabaseDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet24.xss">
+      <DependentUpon>finaldatabaseDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet25.xsc">
+      <DependentUpon>finaldatabaseDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet25.xss">
+      <DependentUpon>finaldatabaseDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet26.xsc">
+      <DependentUpon>finaldatabaseDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet26.xss">
+      <DependentUpon>finaldatabaseDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet27.xsc">
+      <DependentUpon>finaldatabaseDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet27.xss">
+      <DependentUpon>finaldatabaseDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet28.xsc">
+      <DependentUpon>finaldatabaseDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet28.xss">
+      <DependentUpon>finaldatabaseDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet29.xsc">
+      <DependentUpon>finaldatabaseDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet29.xss">
+      <DependentUpon>finaldatabaseDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet3.xsc">
+      <DependentUpon>finaldatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet3.xss">
+      <DependentUpon>finaldatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet30.xsc">
+      <DependentUpon>finaldatabaseDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet30.xss">
+      <DependentUpon>finaldatabaseDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet31.xsc">
+      <DependentUpon>finaldatabaseDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet31.xss">
+      <DependentUpon>finaldatabaseDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet32.xsc">
+      <DependentUpon>finaldatabaseDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet32.xss">
+      <DependentUpon>finaldatabaseDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet33.xsc">
+      <DependentUpon>finaldatabaseDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet33.xss">
+      <DependentUpon>finaldatabaseDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet34.xsc">
+      <DependentUpon>finaldatabaseDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet34.xss">
+      <DependentUpon>finaldatabaseDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet35.xsc">
+      <DependentUpon>finaldatabaseDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet35.xss">
+      <DependentUpon>finaldatabaseDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet36.xsc">
+      <DependentUpon>finaldatabaseDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet36.xss">
+      <DependentUpon>finaldatabaseDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet4.xsc">
+      <DependentUpon>finaldatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet4.xss">
+      <DependentUpon>finaldatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet5.xsc">
+      <DependentUpon>finaldatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet5.xss">
+      <DependentUpon>finaldatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet6.xsc">
+      <DependentUpon>finaldatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet6.xss">
+      <DependentUpon>finaldatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet7.xsc">
+      <DependentUpon>finaldatabaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet7.xss">
+      <DependentUpon>finaldatabaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet8.xsc">
+      <DependentUpon>finaldatabaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet8.xss">
+      <DependentUpon>finaldatabaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet9.xsc">
+      <DependentUpon>finaldatabaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="finaldatabaseDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finaldatabaseDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finaldatabaseDataSet9.xss">
+      <DependentUpon>finaldatabaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="finaldatabase.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
