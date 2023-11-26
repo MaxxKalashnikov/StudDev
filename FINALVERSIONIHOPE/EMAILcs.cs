@@ -72,7 +72,7 @@ namespace FINALVERSIONIHOPE
                 smtpClient.EnableSsl = true;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential(from.Address, "Maxim04042001Kalashnikov");
+                smtpClient.Credentials = new NetworkCredential(from.Address, "***");
                 smtpClient.Send(m);
                 MessageBox.Show("Сообщение отправлено на ваш E-Mail");
                 panel1.Visible = false;
