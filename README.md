@@ -1,6 +1,6 @@
 Attention! Very raw product!
 
-This was my first big project on C#. It is the managing application for university called "StudDec". The idea was to creat a desktop application which would help teachers and administration stuff 
+This was my first big project on C#. It is the managing application for university called "StudDec". The idea was to create a desktop application which would help teachers and administration stuff 
 to deal with all information of students (name, ID, date of birth, adress, etc.). I made a big work dealing with all databases and local server. I added many features which allow the user to work
 with database tables, add them, change them and other necessary operations. 
 
